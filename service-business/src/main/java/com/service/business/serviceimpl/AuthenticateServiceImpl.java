@@ -5,6 +5,7 @@ import com.service.business.service.AuthenticateService;
 import com.service.domain.entity.Authenticate;
 import com.service.library.CommonUtil;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -64,5 +65,11 @@ public class AuthenticateServiceImpl implements AuthenticateService{
             }
         }
         return result;
+    }
+    
+    @Override
+    public List<Map<String, Object>> getAll(){
+        List<Map<String, Object>> listData = authenticateDao.getAllAuth();
+        return listData;
     }
 }
