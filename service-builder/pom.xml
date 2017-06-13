@@ -9,7 +9,7 @@
         <module>../service-domain</module>
         <module>../service-business</module>
         <module>../service-library</module>
-        <module>../WebService</module>
+        <module>../Service-Parking-System</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
